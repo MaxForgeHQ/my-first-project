@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Premium SaaS — MaxForgeHQ</title>
+<meta name="description" content="SaaS dashboard website demo — clean UI, glassmorphism, fast and premium look." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d101a;--bg2:#101828;--txt:#f2f7ff;--muted:#97a4c4;--c1:#7b5cff;--c2:#00eaff;--glass:rgba(255,255,255,.05);--border:rgba(255,255,255,.15)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--txt);
+background:linear-gradient(135deg,var(--bg),var(--bg2));background-attachment:fixed}
+.wrap{max-width:1200px;margin:0 auto;padding:22px 18px 80px}
+h1,h2,h3{margin:0}
+a{text-decoration:none}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:600;
+background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
+.glass{background:var(--glass);border:1px solid var(--border);border-radius:18px;backdrop-filter:blur(12px)}
+.header{text-align:center;padding:70px 22px}
+.brand{font-size:40px;font-weight:800;background:linear-gradient(90deg,var(--c1),var(--c2));
+-webkit-background-clip:text;color:transparent}
+.sub{color:var(--muted);max-width:700px;margin:12px auto 0}
+.cta{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.section{margin-top:28px;padding:28px 22px}
+.grid{display:grid;gap:16px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:960px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid-3{grid-template-columns:1fr}}
+
+.card{padding:18px;border-radius:16px;background:var(--glass);border:1px solid var(--border)}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+
+.dash{margin-top:22px;border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.dash img{width:100%;display:block;opacity:.96}
+
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.pricing{grid-template-columns:1fr}}
+.plan{padding:20px;border-radius:16px;background:var(--glass);border:1px solid var(--border)}
+.plan h3{margin:0}
+.price{font-size:26px;font-weight:800;margin:10px 0;background:linear-gradient(90deg,var(--c1),var(--c2));
+-webkit-background-clip:text;color:transparent}
+.list{margin:10px 0 0;padding-left:18px;line-height:1.6;color:#d6e6ff}
+
+.footer{text-align:center;color:var(--muted);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="header">
+    <div class="brand">Premium SaaS</div>
+    <p class="sub">Glass dashboard design. Clean charts, metrics, onboarding. Premium hi-tech for SaaS startups.</p>
+    <div class="cta">
+      <a class="btn" href="https://t.me/MaxForgeHQ" target="_blank">Hire for SaaS site</a>
+      <a class="btn" href="index.html#portfolio">Back to portfolio</a>
+    </div>
+    <div class="dash">
+      <img src="https://images.unsplash.com/photo-1556742400-b5b7c5121f3f?q=80&w=1600&auto=format&fit=crop" alt="SaaS Dashboard Preview">
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="glass section">
+    <h2>Why SaaS teams love it</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>📊 Dashboard</h3><p>KPIs, MRR, churn, growth — all in clean charts.</p></div>
+      <div class="card"><h3>🎨 UI System</h3><p>Glass, gradients, cards, forms. Reusable.</p></div>
+      <div class="card"><h3>⚡ Speed</h3><p>Pure HTML/CSS, Lighthouse green scores.</p></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="glass section">
+    <h2>Plans</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Launch</h3>
+        <div class="price">$499</div>
+        <ul class="list">
+          <li>Landing + Login</li>
+          <li>Basic dashboard</li>
+          <li>GitHub deploy</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Growth</h3>
+        <div class="price">$999</div>
+        <ul class="list">
+          <li>+ Billing page</li>
+          <li>+ Team accounts</li>
+          <li>Analytics hooks</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Scale</h3>
+        <div class="price">$1999</div>
+        <ul class="list">
+          <li>Full SaaS theme</li>
+          <li>A/B testing blocks</li>
+          <li>Priority support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer">© MaxForgeHQ — Premium SaaS Demo</p>
+</div>
+</body>
+</html>
