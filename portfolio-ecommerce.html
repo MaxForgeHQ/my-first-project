@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>E-Commerce Store — MaxForgeHQ</title>
+<meta name="description" content="Hi-tech e-commerce demo: product grid, glass cards, bold CTAs, lightning speed.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#0a0f1e; --bg2:#0a1a2f; --txt:#eaf2ff; --muted:#9bb0d1;
+  --c1:#00e5ff; --c2:#5b8cff; --glass:rgba(255,255,255,.06); --stroke:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
+     background:linear-gradient(120deg,var(--bg1),var(--bg2))}
+.wrap{max-width:1160px;margin:0 auto;padding:24px 18px 70px}
+
+/* Header */
+.header{padding:26px 20px;display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;
+        background:var(--glass);border:1px solid var(--stroke);border-radius:20px;backdrop-filter:blur(12px);
+        box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.brand{font-weight:800;font-size:26px;background:linear-gradient(90deg,var(--c1),var(--c2));
+       -webkit-background-clip:text;color:transparent}
+.sub{color:var(--muted);margin:0 0 0 8px;font-weight:600}
+.btn{padding:10px 14px;border-radius:10px;text-decoration:none;color:#fff;
+     background:linear-gradient(135deg,var(--c1),var(--c2));border:1px solid rgba(255,255,255,.14);font-weight:700}
+.btn--ghost{background:transparent;color:#cfe7ff;border-color:rgba(0,229,255,.35)}
+
+/* Grid */
+.grid{display:grid;gap:14px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:960px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid-3{grid-template-columns:1fr}}
+
+/* Product card */
+.product{overflow:hidden;border-radius:16px;background:rgba(255,255,255,.05);
+        border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.product img{width:100%;height:220px;object-fit:cover;display:block;opacity:.95;
+             transition:transform .3s,opacity .3s}
+.product:hover img{transform:scale(1.04);opacity:1}
+.pbody{padding:14px}
+.badges{display:flex;gap:8px;margin-bottom:8px}
+.badge{padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.25);font-size:12px;color:#cfe7ff}
+.pname{margin:0 0 6px;font-weight:800}
+.desc{margin:0;color:#cfe7ff;opacity:.9}
+.bottom{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.price{font-weight:900;font-size:18px;background:linear-gradient(90deg,var(--c1),var(--c2));
+       -webkit-background-clip:text;color:transparent}
+.actions{display:flex;gap:8px}
+.small{padding:8px 12px;border-radius:10px;text-decoration:none;color:#fff;
+       background:linear-gradient(135deg,var(--c1),var(--c2));border:1px solid rgba(255,255,255,.14);font-weight:700}
+.small--ghost{background:transparent;color:#cfe7ff;border-color:rgba(0,229,255,.35)}
+
+/* Section box */
+.box{margin-top:16px;padding:16px 20px;background:var(--glass);border:1px solid var(--stroke);border-radius:16px}
+.box h3{margin:0 0 8px}
+.box p{margin:0;color:#d6e6ff}
+.footer{text-align:center;color:var(--muted);margin-top:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <div class="header">
+    <div style="display:flex;align-items:center;gap:6px">
+      <div class="brand">E-Commerce Demo</div>
+      <div class="sub">Hi-tech product grid & CTAs</div>
+    </div>
+    <div>
+      <a class="btn--ghost btn" href="index.html#portfolio">Back</a>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="grid grid-3">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be?q=80&w=1600&auto=format&fit=crop" alt="Aurora Headphones">
+      <div class="pbody">
+        <div class="badges"><span class="badge">New</span><span class="badge">Hi-Res</span></div>
+        <p class="pname">Aurora Headphones</p>
+        <p class="desc">Deep bass, airy highs, studio comfort.</p>
+        <div class="bottom">
+          <div class="price">$199</div>
+          <div class="actions">
+            <a class="small" href="https://t.me/MaxForgeHQ" target="_blank" rel="noopener">Order</a>
+            <a class="small small--ghost" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1600&auto=format&fit=crop" alt="Neon Keyboard">
+      <div class="pbody">
+        <div class="badges"><span class="badge">Hot</span><span class="badge">RGB</span></div>
+        <p class="pname">Neon Keyboard</p>
+        <p class="desc">Mechanical feel, per-key lighting, compact.</p>
+        <div class="bottom">
+          <div class="price">$129</div>
+          <div class="actions">
+            <a class="small" href="https://t.me/MaxForgeHQ" target="_blank" rel="noopener">Order</a>
+            <a class="small small--ghost" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop" alt="Skyline Drone">
+      <div class="pbody">
+        <div class="badges"><span class="badge">Pro</span><span class="badge">4K</span></div>
+        <p class="pname">Skyline Drone</p>
+        <p class="desc">Stabilized 4K, long-range, compact case.</p>
+        <div class="bottom">
+          <div class="price">$699</div>
+          <div class="actions">
+            <a class="small" href="https://t.me/MaxForgeHQ" target="_blank" rel="noopener">Order</a>
+            <a class="small small--ghost" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Extra info -->
+  <div class="box">
+    <h3>Why this demo sells</h3>
+    <p>Sharp visuals, clear price anchors, fast load. Swap images & copy — launch in minutes.</p>
+  </div>
+
+  <p class="footer">© MaxForgeHQ — E-Commerce Demo</p>
+</div>
+</body>
+</html>
