@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Consulting — MaxForgeHQ</title>
+<meta name="description" content="Premium consulting demo: trust, clarity, sharp design.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#0c111e; --bg2:#0d1a32; --txt:#eaf2ff; --muted:#a2b4d8;
+  --c1:#ff6ec4; --c2:#7873f5; --glass:rgba(255,255,255,.05); --stroke:rgba(255,255,255,.15);
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
+     background:linear-gradient(135deg,var(--bg1),var(--bg2))}
+.wrap{max-width:1200px;margin:0 auto;padding:28px 20px 80px}
+
+/* Header */
+.header{padding:28px 22px;margin-bottom:30px;display:flex;justify-content:space-between;align-items:center;
+        background:var(--glass);border:1px solid var(--stroke);border-radius:22px;backdrop-filter:blur(12px);
+        box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.brand{font-size:28px;font-weight:800;background:linear-gradient(90deg,var(--c1),var(--c2));
+       -webkit-background-clip:text;color:transparent}
+.nav{display:flex;gap:18px}
+.nav a{color:var(--txt);text-decoration:none;font-weight:600;opacity:.9}
+.nav a:hover{opacity:1;color:#fff}
+.btn{padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700;color:#fff;
+     background:linear-gradient(135deg,var(--c1),var(--c2));border:1px solid rgba(255,255,255,.2)}
+.btn--ghost{background:transparent;color:#dbe5ff;border-color:rgba(255,110,196,.4)}
+
+/* Hero */
+.hero{padding:80px 20px;text-align:center}
+.hero h1{font-size:46px;margin:0;background:linear-gradient(90deg,var(--c1),var(--c2));
+         -webkit-background-clip:text;color:transparent;font-weight:900}
+.hero p{font-size:20px;margin:16px auto;max-width:700px;color:var(--muted)}
+.hero .cta{margin-top:28px}
+
+/* Grid */
+.grid{display:grid;gap:20px;margin-top:40px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid-3{grid-template-columns:1fr}}
+
+/* Card */
+.card{padding:22px;background:var(--glass);border:1px solid var(--stroke);border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);backdrop-filter:blur(10px)}
+.card h3{margin:0 0 8px;font-size:20px}
+.card p{margin:0;color:#d6e4ff}
+
+/* Section */
+.section{margin-top:60px}
+.section h2{font-size:28px;font-weight:800;margin:0 0 16px;background:linear-gradient(90deg,var(--c1),var(--c2));
+            -webkit-background-clip:text;color:transparent}
+.footer{text-align:center;color:var(--muted);margin-top:60px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="brand">Consulting Demo</div>
+    <div class="nav">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <a class="btn--ghost btn" href="index.html#portfolio">Back</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Clarity. Strategy. Results.</h1>
+    <p>Premium consulting demo site — sharp visuals, trust-first design, built for decision-makers who want impact.</p>
+    <div class="cta">
+      <a class="btn" href="https://t.me/MaxForgeHQ" target="_blank" rel="noopener">Book a Call</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="section" id="services">
+    <h2>Core Services</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Business Strategy</h3>
+        <p>Data-driven roadmaps to outperform your market peers.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Transformation</h3>
+        <p>Automations, platforms, and tech adoption without chaos.</p>
+      </div>
+      <div class="card">
+        <h3>Growth Consulting</h3>
+        <p>Proven funnels, scaling tactics, and actionable metrics.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Approach -->
+  <div class="section" id="approach">
+    <h2>Our Approach</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Audit</h3><p>We start by auditing your current systems & gaps.</p></div>
+      <div class="card"><h3>Blueprint</h3><p>A tailored strategy built for ROI and scalability.</p></div>
+      <div class="card"><h3>Execution</h3><p>Implementation with clear KPIs and follow-ups.</p></div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Want premium consulting? Let's talk.</p>
+    <p><a class="btn" href="mailto:fizi@tutanota.com">Email</a></p>
+  </div>
+
+  <p class="footer">© MaxForgeHQ — Consulting Demo</p>
+</div>
+</body>
+</html>
