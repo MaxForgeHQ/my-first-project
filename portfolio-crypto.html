@@ -57,4 +57,166 @@
     footer{margin:36px 0 12px;color:#93a3b8}
     @media (max-width:980px){
       .hero{grid-template-columns:1fr}
-      .grid{gri
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .case{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="logo-badge">Ξ</div>
+        <div>
+          <strong>Maxim Studio</strong><br/>
+          <span style="color:#93a3b8">Crypto / Web3 Портфолио</span>
+        </div>
+      </div>
+      <nav>
+        <a href="portfolio-landing.html">Landing</a>
+        <a href="portfolio-saas.html">SaaS</a>
+        <a href="portfolio-ecommerce.html">E-commerce</a>
+        <a href="portfolio-consulting.html">Consulting</a>
+        <a style="background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0a1020;font-weight:800">Crypto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Крипта &amp; Web3: биржи, кошельки, DeFi, NFT, смарт-контракты</h1>
+        <p>Создаём безопасные и быстрые продукты: non-custodial кошельки, торговые терминалы, лаунчпады, DeFi-дашборды, KYC-флоу, AML-мониторинг, платёжные шлюзы. Дизайн — премиум, скорость — молния, безопасность — железобетон.</p>
+        <div class="cta">
+          <a class="btn primary" href="#cases">Смотреть кейсы</a>
+          <a class="btn" href="#contact">Обсудить проект</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="k">+312%</div>
+            <div style="color:#93a3b8">Рост конверсии после редизайна биржи</div>
+          </div>
+          <div class="stat">
+            <div class="k">99.98%</div>
+            <div style="color:#93a3b8">Аптайм dApp на проде</div>
+          </div>
+          <div class="stat">
+            <div class="k">2.1 сек</div>
+            <div style="color:#93a3b8">TTI терминала на 4G</div>
+          </div>
+        </div>
+      </div>
+      <div class="viz" aria-label="Графическая зона: абстрактная сетка и свечи"></div>
+    </section>
+
+    <section id="cases" class="section">
+      <h2>Проекты</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">Биржа CEX + Pro-терминал</div>
+          <h3 style="margin:6px 0 6px">CEX Exchange UI</h3>
+          <p style="margin:0;color:#aab6c8">Торговый терминал, стакан, лента, margin/derivatives, холодные кошельки, KYC/AML панели.</p>
+          <div class="tags">
+            <span class="tag">Next.js</span><span class="tag">WebSocket</span><span class="tag">Charts</span><span class="tag">KYC/AML</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">Non-custodial кошелёк</div>
+          <h3 style="margin:6px 0 6px">Wallet App</h3>
+          <p style="margin:0;color:#aab6c8">Мультичейн (EVM, BTC, TON), seed/шифрование, swap/bridge, watch-mode, push-подписки.</p>
+          <div class="tags">
+            <span class="tag">React Native</span><span class="tag">EVM</span><span class="tag">TON</span><span class="tag">BIP-39</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">DeFi-дашборд</div>
+          <h3 style="margin:6px 0 6px">DeFi Analytics</h3>
+          <p style="margin:0;color:#aab6c8">TVL, APY, пулы ликвидности, стратегии фарминга, оповещения по рискам.</p>
+          <div class="tags">
+            <span class="tag">The Graph</span><span class="tag">Dune</span><span class="tag">ETL</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">NFT-маркетплейс</div>
+          <h3 style="margin:6px 0 6px">NFT Market</h3>
+          <p style="margin:0;color:#aab6c8">Коллекции, lazy mint, аукционы, роялти, модерация контента, витрины.</p>
+          <div class="tags">
+            <span class="tag">IPFS</span><span class="tag">ERC-721/1155</span><span class="tag">Node</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">Лаунчпад / IDO</div>
+          <h3 style="margin:6px 0 6px">Launchpad</h3>
+          <p style="margin:0;color:#aab6c8">Уровни стейкинга, распределение токенов, вестинг, KYC, антибот.</p>
+          <div class="tags">
+            <span class="tag">Vesting</span><span class="tag">Anti-bot</span><span class="tag">KMS</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">Платёжный шлюз</div>
+          <h3 style="margin:6px 0 6px">Crypto Payments</h3>
+          <p style="margin:0;color:#aab6c8">Merchant-виджеты, webhooks, счета, возвраты, отчётность, мультивалюта.</p>
+          <div class="tags">
+            <span class="tag">API</span><span class="tag">Webhook</span><span class="tag">KMS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Кейс: редизайн биржи → +312% к конверсии</h2>
+      <div class="case">
+        <div class="card">
+          <span class="pill">Безопасность: 2FA, адрес-белый список, сессии</span>
+          <ul class="list">
+            <li>UX торговли: быстрые ордера, горячие клавиши, drag-TP/SL.</li>
+            <li>Latency-оптимизация: агрегация тиков, батч-обновления DOM.</li>
+            <li>Анти-фрод: device-fingerprint, лимиты, поведенческие сигналы.</li>
+            <li>Компоненты: стакан, глубина, лента, PnL, портфель.</li>
+          </ul>
+          <div class="kpi">
+            <div class="card"><div style="color:#93a3b8">Регистрация → депозит</div><div class="k" style="color:var(--ok)">+312%</div></div>
+            <div class="card"><div style="color:#93a3b8">Средн. TTI</div><div class="k">2.1 сек</div></div>
+            <div class="card"><div style="color:#93a3b8">Отказы</div><div class="k" style="color:var(--warn)">−28%</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Техстек & практики</h3>
+          <ul class="list">
+            <li>Next.js App Router, React 18, серверные компоненты.</li>
+            <li>WebSocket/GRPC, оптимистичные апдейты, виртуализация списков.</li>
+            <li>Безопасность: CSP/Trusted Types, Subresource Integrity, KMS.</li>
+            <li>Аналитика: события, фunnels, ретеншен-когорты, a/b.</li>
+          </ul>
+          <div class="tags" style="margin-top:8px">
+            <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">GRPC</span><span class="tag">CSP</span><span class="tag">A/B</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Что делаем для криптопроектов</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin:0 0 6px">Дизайн системы & UI-кит</h3>
+          <p style="margin:0;color:#aab6c8">Компоненты биржи/кошелька, тёмные темы, доступность, состояния, гайдлайны.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Интеграции & данные</h3>
+          <p style="margin:0;color:#aab6c8">Ончейн индексы, провайдеры котировок, AML/KYC, платежи, отчётность для комплаенса.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Аудит UX & перфоманс</h3>
+          <p style="margin:0;color:#aab6c8">TTI, LCP, WebSocket-нагрузка, защита от перегрева DOM, анти-фрод UX.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="footer-cta">
+        <div>
+          <strong style="font-size:18px">Нужен кошелёк, биржа или DeFi-дашборд?</strong>
+          <div style="
